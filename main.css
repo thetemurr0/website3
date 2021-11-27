@@ -1,0 +1,180 @@
+/* Core styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('./static/RedHatDisplay-Regular.ttf');
+}
+
+
+/* Header styles */
+body {
+background-image: url('./images/pattern-background-desktop.png');
+font-family:"Red Hat Display", sans-serif;
+}
+
+main {
+    display: flex;
+    position: absolute;
+    border-radius: 16px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 310px;
+    height: 77%;
+    flex-direction: column;
+    margin: auto;
+}
+.description {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.description p.p-one {
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Red Hat Display';
+}
+
+.description p.text {
+    font-size: 12px;
+    font-family: 'Red Hat Display' ;
+    color: hsl(229, 16%, 65%);
+    text-align: center;
+    width: 70%;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.music {
+    width: 80%;
+    border-radius: 16px;
+    height: 75px;
+    margin: 13px 30px;
+    box-sizing: border-box;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music img {
+    width: 36px;
+    margin: 15px;
+}
+
+.dollar {
+    margin-right: 47px;
+    line-height: 1.5;
+}
+
+.dollar .plan {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.dollar .money {
+    color: hsl(229, 16%, 65%);
+    font-size: 12px;
+}
+
+a {
+    font-size: 11px;
+    margin-right:19px;
+    color: hsl(245, 75%, 52%);
+    box-sizing: border-box;
+    font-weight: 900;
+}
+
+.btn {
+    width: 80%;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background-color: hsl(223, 81%, 45%);
+    color: white;
+    border-radius: 9px;
+    border: none;
+    font-family: 'Red Hat Display';
+    font-size: 12px;
+    box-shadow: 5px 15px 5px hsl(230, 19%, 94%);
+    cursor:pointer;
+}
+
+.btn:hover  {
+    background-color: hsl(223, 88%, 37%) ;
+}
+
+
+.cancel {
+    margin: 15px auto;
+    color: hsl(229, 16%, 65%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Media section styles */
+
+@media only screen and (max-width:576px) {
+
+ body {
+     background-image: url('./images/pattern-background-mobile.png');
+     background-size: cover;
+     background-position: center;
+     font-family: 'Red Hat Display';
+     text-align: center;
+     background-color: hsl(226, 100%, 91%);
+ }
+
+ main {
+    margin: auto;
+    height: 90%;
+}
+
+.description {
+    margin-top: 11px;
+}
+
+.description p.text {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.btn {
+    width: 80%;
+    padding: 14px 20px;
+    font-size: 14px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
